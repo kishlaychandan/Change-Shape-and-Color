@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main{
+    width: 23rem;
+    height: 23rem;
+    background-color: #bc68b1;
+    border-radius: 2rem;
+    border: 2px solid gray;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.circle{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shape{
+    width: 6rem;
+    height: 6rem;
+    background-color: blueviolet;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.main >.button > .change-color {
+    background-color: blue;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    border: 2px solid blue;
+    color: white;
+}
+.main >.button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.main >.button >div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.main >.button >div> .change-shape{
+    background-color: blue;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    border: 2px solid blue;
+    color: white;
+}
+.main >.button >div> .change-shape:hover{
+    cursor: pointer;
+    background-color: white;
+    color: blue;
+}
+
+.main >.button >div> .change-color {
+    background-color: blue;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    border: 2px solid blue;
+    color: white;
+}
+.main >.button >div> .change-color:hover{
+    cursor: pointer;
+    background-color: white;
+    color: blue;
+}
+.main >.button >div> .change-bgcolor {
+    background-color: blue;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    border: 2px solid blue;
+    color: white;
+}
+.main >.button >div> .change-bgcolor:hover{
+    cursor: pointer;
+    background-color: white;
+    color: blue;
+}
+
